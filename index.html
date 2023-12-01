@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/201c87732b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!--Mis estilos-->
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/c9b87a4bee.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Mi primera página web</title>
+  </head>
+  <body>
+    <div class="container">
+      <header id="menu">
+        <a href="index.html"><i class="fa-solid fa-heart"></i></a>
+        <nav>
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <ul>
+            <li>Inicio</li>
+            <li>Acerca de mí</li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+          </ul>
+        </nav>
+      </header>
+      <main id="seccion-principal">
+        <section class="seccion-1">
+          <div class="acerca-de">
+            <div class="parrafos">
+              <h2 class="h2acerca">Acerca de mí</h2>
+              <p class="parrafo1">
+                Bienvenido a mi página! Aquí aprenderás más sobre mí.
+              </p>
+              <p class="parrafo2">
+                Me llamo Norberto, nací en Mendoza y vivo en Guaymallén. Me
+                gusta la música, los deportes, ver series e ir al cine. Me
+                encantaría aprender a programar para poder ayudar a las personas
+                a mostrar lo que hacen bien
+              </p>
+            </div>
+            <div class="acerca-imagen">
+              <img src="./img/acerca-de.jpg" alt="imagen personal" />
+            </div>
+          </div>
+        </section>
+
+        <section class="seccion-2">
+          <img src="./img/banner.jpg" alt="imagen de carrusel" />
+        </section>
+      </main>
+      <section id="seccion-trabajos">
+        <h3 id="trabajos">Trabajos</h3>
+        <div class="trabajos">
+          <div class="card">
+            <img src="./img/trabajos1.jpg" alt="" />
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              quisquam quidem numquam laborum, quod ratione officia, incidunt
+              perspiciatis repellendus possimus distinctio at sit laboriosam
+              similique eum doloremque doloribus reiciendis unde?
+            </p>
+            <a href="" class="card-link">Leer más</a>
+          </div>
+          <div class="card">
+            <img src="./img/trabajos2.jpg" alt="" />
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              quisquam quidem numquam laborum, quod ratione officia, incidunt
+              perspiciatis repellendus possimus distinctio at sit laboriosam
+              similique eum doloremque doloribus reiciendis unde?
+            </p>
+            <a href="" class="card-link">Leer más</a>
+          </div>
+          <div class="card">
+            <img src="./img/trabajos3.jpg" alt="" />
+            <h4 class="card-title">Título</h4>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
+              quisquam quidem numquam laborum, quod ratione officia, incidunt
+              perspiciatis repellendus possimus distinctio at sit laboriosam
+              similique eum doloremque doloribus reiciendis unde?
+            </p>
+            <a href="" class="card-link">Leer más</a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="formulario">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+
+        <form action="" method="get" class="formulario" id="form">
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="pepe@gmail.com"
+              required
+            />
+          </div>
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+          </div>
+          <div class="form-row">
+            <button>Enviar</button>
+          </div>
+          <p class="alertas" id="alertas"></p>
+        </form>
+      </section>
+      <footer>
+        <h3>Redes</h3>
+        <nav>
+          <ul>
+            <li>Contacto</li>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Whatsapp</li>
+          </ul>
+        </nav>
+      </footer>
+      <div class="fixed">
+        <a href="#menu"><i class="fa-solid fa-heart"></i></a>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
